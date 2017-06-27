@@ -1,7 +1,7 @@
 module BraspagRest
   def self.config
     @config ||= BraspagRest::Configuration.new
-    @config.logger = Rails.logger  
+    # @config.logger = Rails.logger
     yield @config if block_given?
     @config
   end
